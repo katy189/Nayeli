@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Nayeli Katherin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: url(imagen/Louvre.jpg) no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            margin: 0;
+        }
+
+        h2 {
+            color: #6f4c3e;
+            border-bottom: 2px solid #f7b733;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f7b733;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #b49a8a;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.5s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f7b733;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #6f4c3e;
+            color: white;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #333;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #f7b733;
+        }
+
+        .floating-icon {
+            position: absolute;
+            width: 50px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 10px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nayeli Katherin</h1>
+        <p>Artista y Apasionada por la Pintura</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#biografia">Biografía</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <img src="https://example.com/kim_possible.png" class="floating-icon" alt="Kim Possible" style="top: 50px; left: 20px;">
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenida a mi Blog</h2>
+            <p>Hola, soy Nayeli Katherin, una apasionada artista que encuentra su inspiración en la belleza de la vida cotidiana. En este blog compartiré mis obras, mi proceso creativo y todo lo que amo sobre el arte.</p>
+            <img src="imagen/chica dibuja.webp" alt="Arte y Creatividad">
+        </section>
+
+        <section id="biografia">
+            <h2>Sobre Mí</h2>
+            <p>Nací en Lima, Perú, y desde pequeña me he sentido atraída por la pintura. Estudié Bellas Artes en la Universidad de Arte de Lima y he participado en exposiciones locales. Mi estilo se inspira en el vintage, combinando colores suaves y elementos nostálgicos.</p>
+            <p>Me encanta explorar diferentes técnicas, desde acuarela hasta acrílico, y siempre busco maneras de innovar en mis obras.</p>
+        </section>
+
+        <section id="hobbies">
+            <h2>Mis Hobbies</h2>
+            <p>Además de pintar, tengo una gran pasión por la música K-Pop, que me inspira y motiva a crear. La energía y la creatividad de este género son contagiosas y me acompañan mientras pinto.</p>
+            <p>Disfruto de la equitación, una actividad que me conecta con la naturaleza y me da un impulso de adrenalina. Montar a caballo me hace sentir libre y viva.</p>
+            <p>También me encanta explorar actividades llenas de adrenalina, como el paracaidismo y el senderismo en montañas desafiantes. Cada experiencia me llena de emoción y me recuerda la belleza del mundo que me rodea.</p>
+
+            <h3>Galería de Hobbies</h3>
+            <div class="gallery">
+                <img src="imagen/mujer-joven-tocar-guitarra-adentro_23-2149140593.avif" alt="Tocando la guitarra">
+                <img src="imagen/cabllo.jpg" alt="Montando a caballo">
+                <img src="imagen/linda-mujer-tendida-sofa-escuchando-musica-sala-estar_107420-2111.avif" alt="Escuchando musica">
+            </div>
+
+            <h3>Video Favorito</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/EPnkvlDxbgQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería de Obras</h2>
+            <div class="gallery">
+                <img src="imagen/arbol.avif" alt="Pintura 1">
+                <img src="imagen/chica.avif" alt="Pintura 2">
+                <img src="imagen/paisaje.jpg" alt="Pintura 3">
+                <img src="imagen/arte-digital-hermosas-montanas_23-2151123841.avif" alt="Pintura 4">
+                <img src="imagen/istockphoto-1353307239-612x612.jpg" alt="Pintura 5">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Pintura 6">
+            </div>
+        </section>
+
+        <section id="contacto">
+                <h2>Contacto</h2>
+                <p>Puedes contactarme a través de los siguientes medios:</p>
+                <ul>
+                    <li>Gmail: <a href="mailto:katherin.chata@upeu.edu.pe">katherin.chata@upeu.edu.pe</a></li>
+                    <li>Teléfono: (123) 456-7890</li>
+                    <li>Instagram: <a href="https://instagram.com/nayelikatherin" target="_blank">@nayelikatherin</a></li>
+                </ul>
+                <a href="mailto:nayeli.katherin@email.com" class="cta-button">Envíame un Mensaje</a>
+            </section>
+            
+            <section>
+                <h2>Sígueme en Redes Sociales</h2>
+                <div class="social-icons">
+                    <a href="https://instagram.com/nayelikatherin" target="_blank">📸</a>
+                    <a href="https://twitter.com/nayelikatherin" target="_blank">🐦</a>
+                    <a href="https://facebook.com/nayelikatherin" target="_blank">📘</a>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 Nayeli Katherin. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+    </html>
